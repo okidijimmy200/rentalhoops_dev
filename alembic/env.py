@@ -18,8 +18,8 @@ if config.config_file_name is not None:
 # for 'autogenerate' support
 # from myapp import mymodel
 # target_metadata = mymodel.Base.metadata
-from database import Base
-from models import DeliveryRequest, Driver
+from database import Base  # Adjust import as needed
+from models import * 
 
 target_metadata = Base.metadata
 

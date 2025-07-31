@@ -25,3 +25,8 @@ class StatusUpdateModel(BaseModel):
 
 class ConfirmModel(BaseModel):
     delivery_id: int
+
+class UserRole(str, Enum):
+    client = "client"
+    driver = "driver"
+    admin = "admin"
